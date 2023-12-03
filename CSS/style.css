@@ -1,0 +1,147 @@
+@media (max-width: 600px) or (max-width: 800px) or (max-width: 990px) {
+  .flex,
+  .box-form {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .margin-30 {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
+}
+
+body {
+  background-color: #faebd7;
+  font-family: "lato", sans-serif;
+  color: #a59179;
+}
+
+.container-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 20px 10px;
+  padding: 20px 10px;
+  font-weight: 900;
+  color: #a59179;
+}
+
+.box-form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-size: 1.3em;
+  margin: 5px 0px;
+}
+
+.div-input {
+  margin: 20px 0px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 0px solid;
+  border-radius: 5px;
+  margin: 5px 0px;
+
+  box-sizing: border-box;
+
+  background-color: #ffffff;
+}
+
+
+input::placeholder {
+  color: #bcbcbc;
+}
+
+
+form {
+  width: 80%;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.flex > div {
+  margin: 0px 15px;
+  width: 100%;
+}
+
+.margin-30 {
+  margin: 0px 15px;
+}
+
+.erro {
+  color: red;
+  font-size: 1rem;
+  visibility: hidden;
+}
+
+
+input, select {
+  font-family: "lato", sans-serif;
+  border: none;
+  outline: 1px solid #ccc;
+}
+
+input:focus, select {
+  border: none;
+  outline: 2px solid #c2aa8d;
+}
+
+button {
+  background-color: #9f8464;
+  border: none;
+  margin: 15px 10px;
+  padding: 10px 30px;
+  border-radius: 100px;
+  color: #e2dad1;
+  font-size: 1em;
+}
+
+button:hover {
+ background-color: #736451;
+ transition: 200ms;
+}
+
+button:focus {
+  outline: 2px solid #736451;
+  transition: 200ms;
+ }
+
+button[type="reset"] {
+  background-color: #e3d4c0;
+  border: none;
+  margin: 15px 10px;
+  padding: 10px 30px;
+  border-radius: 100px;
+  color: #765f42;
+  font-size: 1em;
+}
+
+button[type="reset"]:hover {
+ background-color: #cdb89e;
+ transition: 200ms;
+}
+
+button[type="reset"]:focus {
+  outline: 2px solid #cdb89e;
+  transition: 200ms;
+}

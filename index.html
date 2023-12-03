@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="CSS/reset.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="CSS/style.css" media="screen" />    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet"
+  />
+
+  <title>Document</title>
+</head>
+<body>
+  <div class="container-box">
+    <h1>CADASTRO</h1>
+    <div class="box-form">
+      <form id="meuFormulario" action="#">
+        <div class="div-input flex">
+          <div>
+            <p>
+              Nome
+            </p>
+            <input id="nome" class="required" type="text" placeholder="Seu nome"  oninput="validanome()">
+            <p class="erro">&nbsp</p>
+          </div>
+          <div>
+            <p>
+              Nome materno
+            </p>
+            <input id="nomeMaterno" class="required" type="text" placeholder="Nome materno" oninput="validaNomeMae()">
+            <p class="erro">&nbsp</p>
+          </div>
+        </div>
+        <div class="div-input flex">
+          <div>
+            <p>
+              Data de Nascimento
+            </p>
+            <input id="dataNasc" type="date">
+            <p id="null">&nbsp</p>
+          </div>
+          <div class="div-input">
+            <p>
+              CPF
+            </p>
+            <input id="cpf" class="required" type="text" placeholder="Seu CPF" oninput="testCPF()">
+            <p class="erro">&nbsp</p>
+          </div>
+          <div id="sexo" class="div-input">
+            <p>Sexo</p>
+            <div>
+              <select id="estado"  name="estado">
+                <option value="null"></option>
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Não-binário">Não-binário</option>
+              </select>
+              <p id="null">&nbsp</p>
+            </div>
+          </div>
+        </div>
+        <div class="div-input flex">
+          <div>
+            <p>
+              Telefone Celular
+            </p>
+            <input id="tel-cel" class="required" type="tel" placeholder="Telefone Celular" onblur="handlePhoneCel(event)" onfocusout="testTelCel()">
+            <span class="erro">&nbsp</p>
+          </div>
+          <div>
+            <p>
+              Telefone Fixo
+            </p>
+            <input id="tel-fixo" class="required" type="tel" placeholder="Telefone Fixo" onblur="handlePhoneFixo(event)" onfocusout="testTelFixo()">
+            <p class="erro">&nbsp</p>
+          </div>
+        </div>
+        <div class="div-input margin-30">
+          <p>
+            Endereço completo
+          </p>
+          <input id="endereco" class="required" type="text" placeholder="Endereço completo" oninput="testEndereco()">
+          <span class="erro">&nbsp</p>
+        </div>
+        <div class="div-input flex">
+          <div>
+            <p>
+              Login
+            </p>
+            <input id="login" class="required" type="text" placeholder="Seu login" oninput="testLogin()">
+            <span class="erro">&nbsp</p>
+          </div>
+          <div>
+            <p>
+              Senha
+            </p>
+            <input id="senha" class="required" type="password" placeholder="Sua senha" oninput="validaSenha()">
+            <span class="erro">&nbsp</p>
+          </div>
+          <div>
+            <p>
+              Repita a senha
+            </p>
+            <input id="repete-senha" class="required" type="password" placeholder="Repita a senha" oninput="comparaSenha()">
+            <span class="erro">&nbsp</p>
+          </div>
+        </div>
+        <button type="submit">Enviar </button>
+        <button type="reset"> Limpar </button>
+      </form>
+  </div>
+<script type="text/javascript" src="JS/main.js"></script>
+</body>
+</html>
