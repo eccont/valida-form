@@ -65,19 +65,14 @@ select {
   border: 0px solid;
   border-radius: 5px;
   margin: 5px 0px;
-
-
-
+  appearance: none;
   background-color: #ffffff;
 }
-
-
 
 
 input::placeholder {
   color: #bcbcbc;
 }
-
 
 form {
   width: 80%;
