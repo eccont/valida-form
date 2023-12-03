@@ -71,7 +71,7 @@ select {
   background-color: #ffffff;
 }
 
-select {
+select, input[type="date"]{
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
