@@ -10,7 +10,14 @@
     margin-left: 0px !important;
   }
   input, select {
-    width: 100%
+    padding: 10px;
+    border: 0px solid;
+    border-radius: 5px;
+    margin: 5px 0px;
+  
+    box-sizing: border-box;
+  
+    background-color: #ffffff;
   };
 }
 
