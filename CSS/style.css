@@ -66,16 +66,12 @@ select {
   border-radius: 5px;
   margin: 5px 0px;
 
-  box-sizing: border-box;
+
 
   background-color: #ffffff;
 }
 
-select, input[type="date"]{
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-}
+
 
 
 input::placeholder {
